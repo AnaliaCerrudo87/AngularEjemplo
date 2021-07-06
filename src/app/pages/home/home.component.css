@@ -1,0 +1,18 @@
+th,td,tr {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+ }
+
+
+
+ body{
+
+    background-image: url(/assets/img/cielo.png);
+    background-repeat:no-repeat;
+	background-size:cover;
+    
+
+ }
+

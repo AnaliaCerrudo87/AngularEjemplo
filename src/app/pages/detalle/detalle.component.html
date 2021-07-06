@@ -1,0 +1,34 @@
+<h1 [ngStyle]="{'font-family': 'Verdana', 'color':'Black', 'text-align':'center'}">Detalles del Producto</h1>
+<div *ngIf="loading">Loading...</div>
+<div *ngIf="!loading">
+
+
+
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{producto[0].name}}</mat-card-title>
+      <mat-card-subtitle>Disponible desde: {{producto[0].date_add}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{producto[0].photo_url}}"alt="">
+    <mat-card-content>
+      <p>
+        Descripción: {{producto[0].description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <p>PRECIO: {{producto[0].price}} </p>
+        <p>PRECIO POR MAYOR: {{producto[0].wholesale_price}} </p>
+        <p>STOCK: {{producto[0].stock}} </p>
+      </mat-card-actions>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="comprar()" [disabled]="modificado" mat-button>COMPRAR</button>
+      <button mat-raised-button color="accent" routerLink="/">VOLVER</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+  <h1>{{titulo}}</h1>
+  
+
+
+  

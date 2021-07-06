@@ -1,0 +1,37 @@
+<body>
+
+<h1 [ngStyle]="{'font-family': 'Arial Black', 'color':'#eec426','text-align':'center'}">Lista de Productos</h1>
+
+
+
+
+    <table [ngStyle]="{'border':'1px solid'}">
+        <colgroup span="4" class="columns"></colgroup>
+        
+        <div *ngFor="let producto of productos"> 
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Descripción</th>
+          <th>Stock</th>
+        </tr>
+      
+     
+        <tr>
+          
+          <td>{{producto.name}}</td>
+          <td>{{producto.price}}</td>
+          <td>{{producto.description}}</td>
+          <td>{{producto.stock}}</td>
+          <td><button routerLink="detalle/{{producto.id}}">Ver Detalle</button></td>
+        
+        </tr>
+      </div>
+      </table>
+      <img src="./assets/img/marcas.png" alt="" [ngStyle]="{'margin':'10px auto',
+		    'display':'block'}"> 
+    </body>
+    
+    
+    
+    

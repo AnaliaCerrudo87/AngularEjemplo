@@ -1,0 +1,50 @@
+.error{
+    background-color: red;
+}
+.warning{
+    background-color: yellow;
+}
+
+label {
+    display: block;
+    margin: .5em 0 0 0;
+  }
+  
+  input{
+  
+    width:180px;
+      padding:3px 10px;
+      border:1px solid #110861;
+      border-radius:3px;
+      background-color:#c6ee35;
+      margin:8px 0;
+      display:inline-block;
+      
+  }
+  
+  
+
+  form{
+    background-color:rgba(#a56bb1, 0, 0, 1.0);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid cadetblue;
+    border-radius: 5px;
+    
+    
+
+}
+body{
+
+    background-image:url("https://siisacperu.com/wp-content/uploads/2021/01/documentacion.png");
+    background-repeat:no-repeat;
+	  background-size:cover;
+  
+}
+
+
