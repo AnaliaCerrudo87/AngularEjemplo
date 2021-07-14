@@ -33,7 +33,7 @@ label {
 }
 
 body{
-  background-image:url("./assets/img/login2.png");
+  background-image:url("/assets/img/login2.png");
   background-repeat:no-repeat;
 	background-size:cover;
   background-position: center;
