@@ -9,7 +9,7 @@ th,td,tr {
 
  body{
 
-    background-image: url(/assets/img/cielo.png);
+    background-image: url("/assets/img/cielo.png");
     background-repeat:no-repeat;
 	background-size:cover;
     
